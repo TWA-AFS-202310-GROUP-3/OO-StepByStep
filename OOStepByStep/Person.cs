@@ -16,9 +16,21 @@ namespace OOStepByStep
             this.age = age;
         }
 
-        public string IntroduceSelf()
+        public virtual string IntroduceSelf()
         {
-            return $"My name is {name}. I am {age} years old.";
+            return $"My name is {name}. I am {age} years old. ";
+        }
+    }
+
+    public class Student : Person
+    {
+        public Student(string name, int age) : base(name, age)
+        {
+        }
+
+        public override string IntroduceSelf()
+        {
+            return base.IntroduceSelf() + "I am a student. ";
         }
     }
 }

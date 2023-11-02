@@ -15,9 +15,21 @@ namespace OOStepByStepTest
         {
             // Given
             Person person = new Person("Tom", 21);
-            string expectedResult = "My name is Tom. I am 21 years old.";
+            string expectedResult = "My name is Tom. I am 21 years old. ";
             // When
             string result = person.IntroduceSelf();
+            // Then
+            Assert.Equal(expectedResult, result);
+        }
+
+        [Fact]
+        public void Should_return_name_and_age_and_student_when_introduce()
+        {
+            // Given
+            Student student = new Student("Tom", 21);
+            string expectedResult = "My name is Tom. I am 21 years old. I am a student. ";
+            // When
+            string result = student.IntroduceSelf();
             // Then
             Assert.Equal(expectedResult, result);
         }
