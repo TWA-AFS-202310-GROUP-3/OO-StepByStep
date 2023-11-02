@@ -7,7 +7,7 @@ namespace OOStepByStepTest
     using OOStepByStep;
     using Xunit;
 
-    public class ConsoleTest
+    public class ClassTest
     {
         [Fact]
         public void Test_Console()

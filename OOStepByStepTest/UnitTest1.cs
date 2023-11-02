@@ -8,7 +8,7 @@ namespace OOStepByStepTest
         [Fact]
         public void Test1()
         {
-            var class1 = new Class1();
+            Class1 class1 = new Class1();
             Assert.NotNull(class1);
         }
     }

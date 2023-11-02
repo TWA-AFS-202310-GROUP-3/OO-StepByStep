@@ -45,5 +45,17 @@ namespace OOStepByStepTest
             // Then
             Assert.Equal(expectedResult, result);
         }
+
+        [Fact]
+        public void Should_return_name_and_age_and_student_and_class_when_introduce()
+        {
+            // Given
+            Student student = new Student("Tom", 18, 2);
+            string expectedResult = "My name is Tom. I am 18 years old. I am a student. I am a student of class 2. ";
+            // When
+            string result = student.IntroduceSelf();
+            // Then
+            Assert.Equal(expectedResult, result);
+        }
     }
 }
