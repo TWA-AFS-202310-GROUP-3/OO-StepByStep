@@ -27,5 +27,24 @@ namespace OOStepByStepTest
 
             Assert.Equal(expect, actual);
         }
+
+        [Fact]
+        public void Should_return_true_When_Student_calss_exist()
+        {
+            var student = new Student("Tom", 20);
+            Assert.NotNull(student);
+        }
+
+        [Theory]
+        [InlineData("Amy", 35)]
+        public void Should_return_selfIntroduction_When_student_selfIntroduce_Given_name_age(string name, int age)
+        {
+            var expect = "My name is Amy. I am 35 years old. I am a student.";
+
+            var student = new Student(name, age);
+            var actual = student.SelfIntroduction();
+
+            Assert.Equal(expect, actual);
+        }
     }
 }
