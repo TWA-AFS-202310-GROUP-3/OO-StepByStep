@@ -51,7 +51,7 @@ namespace OOStepByStepTest
         {
             // Given
             Student student = new Student("Tom", 18, 2);
-            string expectedResult = "My name is Tom. I am 18 years old. I am a student. I am a student of class 2. ";
+            string expectedResult = "My name is Tom. I am 18 years old. I am a student of class 2. ";
             // When
             string result = student.IntroduceSelf();
             // Then
@@ -63,7 +63,7 @@ namespace OOStepByStepTest
         {
             // Given
             Teacher teacher = new Teacher("Amy", 30, 2);
-            string expectedResult = "My name is Amy. I am 30 years old. I am a teacher. I am a teacher of class 2. ";
+            string expectedResult = "My name is Amy. I am 30 years old. I am a teacher of class 2. ";
             // When
             string result = teacher.IntroduceSelf();
             // Then
