@@ -5,7 +5,6 @@
     {
         private string name;
         private int age;
-
         public Person()
         {
         }
@@ -18,7 +17,7 @@
 
         public string Introduce()
         {
-            return string.Empty;
+            return $"My name is {name}, I am {age} years old";
         }
 
         public void Print()
