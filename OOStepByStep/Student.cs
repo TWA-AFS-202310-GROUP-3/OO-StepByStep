@@ -8,22 +8,13 @@ namespace OOStepByStep
 {
     public class Student : Person
     {
-        private int classNumber = 0;
-
-        public Student(string name, int age) : base(name, age)
-        {
-        }
-
-        public Student(string name, int age, int classNumber) : base(name, age)
-        {
-            this.classNumber = classNumber;
-        }
+        public int ClassNumber { get; set; }
 
         public override string Introduce()
         {
-            if (classNumber > 0)
+            if (ClassNumber > 0)
             {
-                return base.Introduce() + $" I am a student of class {classNumber}.";
+                return base.Introduce() + $" I am a student of class {ClassNumber}.";
             }
             else
             {
