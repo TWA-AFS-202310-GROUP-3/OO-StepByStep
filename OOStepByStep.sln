@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOStepByStep", "OOStepByStep\OOStepByStep.csproj", "{EF35A5A3-8388-41A4-B368-BD763BA56C94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOStepByStep", "OOStepByStep\OOStepByStep.csproj", "{EF35A5A3-8388-41A4-B368-BD763BA56C94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOStepByStepTest", "OOStepByStepTest\OOStepByStepTest.csproj", "{A8ADF2B5-445D-4A86-8DBF-0350586E4EFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOStepByStepTest", "OOStepByStepTest\OOStepByStepTest.csproj", "{A8ADF2B5-445D-4A86-8DBF-0350586E4EFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
