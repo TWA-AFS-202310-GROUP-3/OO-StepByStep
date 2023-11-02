@@ -8,8 +8,18 @@ namespace OOStepByStep
 {
     public class Person
     {
-        private string name = "Tom";
-        private int age = 21;
+        private string name;
+        private int age;
+
+        public Person()
+        {
+        }
+
+        public Person(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
 
         public virtual string Introduce()
         {
