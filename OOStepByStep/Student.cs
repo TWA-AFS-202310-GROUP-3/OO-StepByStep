@@ -22,7 +22,7 @@ namespace OOStepByStep
 
         public override string Introduce()
         {
-            return $"{base.Introduce()}. I am a student{GetClassIntro()}";
+            return $"{base.Introduce()} I am a student{GetClassIntro()}.";
         }
     }
 }

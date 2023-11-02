@@ -1,6 +1,8 @@
 ﻿namespace OOStepByStep
 {
     using System;
+    using System.Collections.Generic;
+
     public class Person
     {
         private string name;
@@ -23,11 +25,12 @@
             this.classNumber = classNumber;
         }
 
+        public string Name => name;
         public int ClassNumber { get => classNumber; set => classNumber = value; }
 
         public virtual string Introduce()
         {
-            return $"My name is {name}. I am {age} years old";
+            return $"My name is {name}. I am {age} years old.";
         }
 
         public string GetClassIntro()
