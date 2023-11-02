@@ -18,7 +18,7 @@ namespace OOStepByStep
 
         public override string Introduce()
         {
-            return base.Introduce() + " I am a student";
+            return base.Introduce() + " I am a student.";
         }
     }
 }

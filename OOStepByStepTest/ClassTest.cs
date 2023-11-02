@@ -13,7 +13,7 @@ namespace OOStepByStepTest
 
             string msg = classobj.ClassMember(teacher, 2);
 
-            Assert.Equal("My name is Amy. I am 30 years old. I am a teacher of class 2", msg);
+            Assert.Equal("My name is Amy. I am 30 years old. I am a teacher of class 2.", msg);
         }
 
         [Fact]
@@ -24,7 +24,7 @@ namespace OOStepByStepTest
 
             string msg = classobj.ClassMember(student, 3);
 
-            Assert.Equal("My name is Amy. I am 30 years old. I am a student of class 3", msg);
+            Assert.Equal("My name is Amy. I am 30 years old. I am a student of class 3.", msg);
         }
     }
 }

@@ -17,7 +17,8 @@ namespace OOStepByStep
 
         public string ClassMember(Person person, int classNumber)
         {
-            return person.Introduce() + " of class " + classNumber;
+            var memberIntroduction = person.Introduce();
+            return memberIntroduction.Substring(0, memberIntroduction.Length - 1) + " of class " + classNumber + ".";
         }
     }
 }
