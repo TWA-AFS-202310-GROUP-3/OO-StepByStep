@@ -5,7 +5,7 @@
     {
         private string name;
         private int age;
-        private int classNumber;
+        private int classNumber = int.MinValue;
         public Person()
         {
         }
@@ -23,11 +23,21 @@
             this.classNumber = classNumber;
         }
 
-        public int ClassNumber { get; set; }
+        public int ClassNumber { get => classNumber; set => classNumber = value; }
 
         public virtual string Introduce()
         {
             return $"My name is {name}. I am {age} years old";
+        }
+
+        public string GetClassIntro()
+        {
+            if (this.ClassNumber == int.MinValue)
+            {
+                return string.Empty;
+            }
+
+            return $" of class {classNumber}";
         }
 
         public void Print()
