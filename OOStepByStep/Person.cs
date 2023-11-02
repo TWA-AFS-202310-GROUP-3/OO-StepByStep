@@ -20,9 +20,9 @@ namespace OOStepByStep
             this.age = age;
         }
 
-        public string SelfIntroduction()
+        public virtual string SelfIntroduction()
         {
-            return $"My name is {this.name}. I am {this.age} years old";
+            return $"My name is {this.name}. I am {this.age} years old.";
         }
     }
 }

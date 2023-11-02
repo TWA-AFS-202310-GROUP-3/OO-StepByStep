@@ -20,7 +20,7 @@ namespace OOStepByStepTest
         [InlineData("Tom", 21)]
         public void Should_return_selfIntroduction_When_person_introduce_Given_name_age(string name, int age)
         {
-            var expect = "My name is Tom. I am 21 years old";
+            var expect = "My name is Tom. I am 21 years old.";
 
             var person = new Person(name, age);
             var actual = person.SelfIntroduction();
