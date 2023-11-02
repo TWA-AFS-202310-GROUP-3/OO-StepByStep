@@ -5,11 +5,14 @@ namespace OOStepByStepTest
 
     public class UnitTest1
     {
-        [Fact]
-        public void Test1()
+        [Theory]
+        [InlineData("haha", 11)]
+        public void Should_print_name_age_when_introduce_given_person(string name, int age)
         {
-            var class1 = new Class1();
-            Assert.NotNull(class1);
+            Person person = new Person(name, age);
+            var result = person.Introduce();
+
+            Assert.Equal("My name is haha, I am 11 years old", result);
         }
     }
 }
