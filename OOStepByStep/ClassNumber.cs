@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 
 namespace OOStepByStep
 {
-    public class Student : Person
+    public class ClassMember : Person
     {
-        public Student()
-        {
-        }
-
-        public Student(string name, int age) : base(name, age)
-        {
-        }
+        private int classNumber;
 
         public override string Introduce()
         {
-            return base.Introduce() + " I am a student";
+            return $"{base.Introduce()} I am a member of class {classNumber}.";
         }
     }
 }
+

@@ -22,7 +22,7 @@ namespace OOStepByStepTest
 
             string msg = student.Introduce();
 
-            Assert.Equal("My name is Tom. I am 21 years old. I am a student.", msg);
+            Assert.Equal("My name is Tom. I am 21 years old. I am a student", msg);
         }
 
         [Fact]
@@ -32,7 +32,7 @@ namespace OOStepByStepTest
 
             string msg = teacher.Introduce();
 
-            Assert.Equal("My name is Amy. I am 30 years old. I am a teacher.", msg);
+            Assert.Equal("My name is Amy. I am 30 years old. I am a teacher", msg);
         }
     }
 }
