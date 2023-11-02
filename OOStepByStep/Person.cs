@@ -31,7 +31,7 @@ namespace OOStepByStep
 
     public class Student : Person
     {
-        private string classIntroduction = string.Empty;
+        private string classIntroduction = "I am a student. ";
         public Student(string name, int age) : base(name, age)
         {
         }
@@ -43,13 +43,13 @@ namespace OOStepByStep
 
         public override string IntroduceSelf()
         {
-            return base.IntroduceSelf() + "I am a student. " + classIntroduction;
+            return base.IntroduceSelf() + classIntroduction;
         }
     }
 
     public class Teacher : Person
     {
-        private string classIntroduction = string.Empty;
+        private string classIntroduction = "I am a teacher. ";
         public Teacher(string name, int age) : base(name, age)
         {
         }
@@ -61,7 +61,7 @@ namespace OOStepByStep
 
         public override string IntroduceSelf()
         {
-            return base.IntroduceSelf() + "I am a teacher. " + classIntroduction;
+            return base.IntroduceSelf() + classIntroduction;
         }
     }
 }
