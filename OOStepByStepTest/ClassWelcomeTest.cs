@@ -33,7 +33,7 @@ namespace OOStepByStepTest
             Teacher teacher = new Teacher("Amy", 30, classNumber);
             string t = exampleClass.AddTeacher(teacher);
             Student student = new Student("Tom", 18, classNumber);
-            string expectedResult = "My name is Amy. I am 30 years old. I am a teacher. I am a teacher of class 3. Welcome Tom join class 3. ";
+            string expectedResult = "My name is Amy. I am 30 years old. I am a teacher of class 3. Welcome Tom join class 3. ";
             // When
             string result = exampleClass.AddStudent(student);
             // Then
@@ -51,7 +51,7 @@ namespace OOStepByStepTest
             Student student2 = new Student("Jim", 17, classNumber);
             string t = exampleClass.AddTeacher(teacher);
             string s = exampleClass.AddStudent(student1);
-            string expectedResult = "My name is Amy. I am 30 years old. I am a teacher. I am a teacher of class 3. Welcome Jim join class 3. \r\nMy name is Tom. I am 18 years old. I am a student. I am a student of class 3. Welcome Jim join class 3. ";
+            string expectedResult = "My name is Amy. I am 30 years old. I am a teacher of class 3. Welcome Jim join class 3. \r\nMy name is Tom. I am 18 years old. I am a student of class 3. Welcome Jim join class 3. ";
             // When
             string result = exampleClass.AddStudent(student2);
             // Then
