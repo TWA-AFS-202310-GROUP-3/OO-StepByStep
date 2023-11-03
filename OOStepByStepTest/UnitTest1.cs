@@ -79,10 +79,13 @@ namespace OOStepByStepTest
         {
             //Given
             Student newJoinPerson = new Student(name, age);
-            Teacher teacher = new Teacher("Dr.Wu", classNumber);
+
+            Teacher teacher = new Teacher("Dr.Wu", 23);
+            Classroom classroom = new Classroom(classNumber, teacher);
+
             Student student1 = new Student("wuwu", 10);
             Student student2 = new Student("yiwuyiwu", 12);
-            Classroom classroom = new Classroom(classNumber, teacher);
+
             classroom.AddStudent(student1);
             classroom.AddStudent(student2);
 

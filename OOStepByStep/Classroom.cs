@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace OOStepByStep
 {
@@ -20,6 +16,7 @@ namespace OOStepByStep
         {
             this.classNumber = classNumber;
             this.teacher = teacher;
+            this.teacher.ClassNumber = classNumber;
         }
 
         public Teacher Teacher => teacher;
